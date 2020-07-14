@@ -4,12 +4,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="./css/app.css">
-  <title>Testing linters</title>
+  <title>The New York Times Articles Page - Microverse Positioning and Floating Elements</title>
 </head>
 
 <body>
-  <h1>Hello world!</h1>
+
+  <!-- Navbar -->
+  <nav class="main-nav">
+    <ul class="main-nav-left">
+      <li><a href=""><i class="fas fa-bars"></i></a></li>
+      <li><a href=""><i class="fas fa-search"></i></a></li>
+    </ul>
+
+    <img src="./img/logo.png" alt="Company logo">
+
+    <ul class="main-nav-right">
+      <li><button>SUBSCRIBE NOW</button></li>
+      <li><button>LOG IN</button></li>
+    </ul>
+  </nav>
+
+  <!-- Main section -->
+  <main class="main-article">
+    <article class="article-content">
+
+      <div class="article-showcase">
+        <h1 class="article-showcase-title">Space Ripples Reveal Big Bang’s Smoking Gun</h1>
+        <figure>
+          <img src="./img/showcase.jpg" alt="Image of the article author">
+          <figcaption>Alan Guth was one of the first physicists to hypothesize the existence of inflation which explains
+            how the universe expanded so uniformly and so quickly in the instant after the Big Bang 13.8 billion years
+            ago.Credit...
+            <span class="article-showcase-author">Rick Friedman for The New York Times</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="main-article-container">
+        <div class="article">
+          <p class="main-article-author">By <a href="#">Dennis Overbye</a></p>
+
+          <div class="main-article-social">
+            <p class="main-article-date">March 17, 2014</p>
+
+            <ul class="social-buttons">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+              <li><a href="#"><i class="far fa-bookmark"></i></a></li>
+              <li><a href="#"><i class="far fa-comment-alt"></i>615</a></li>
+            </ul>
+          </div>
+
+          <p></p>
+          <p></p>
+          <p></p>
+          <p></p>
+
+        </div>
+
+        <aside class="editors-picks"></aside>
+      </div>
+
+    </article>
+
+  </main>
+
+  <!-- Featured articles -->
+  <section class="featured-articles">
+    <div class="articles"></div>
+    <aside class="aside-articles-popular"></aside>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+
+  </footer>
+
 </body>
 
 </html>
