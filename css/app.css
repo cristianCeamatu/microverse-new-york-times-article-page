@@ -18,6 +18,10 @@ body {
   font-family: 'Tinos', serif;
 }
 
+h2 {
+  font-size: 20px;
+}
+
 ul {
   list-style: none;
 }
@@ -70,7 +74,6 @@ a {
 }
 
 /* Main Article */
-
 .main-article {
   margin-top: 50px;
   margin-bottom: 50px;
@@ -109,16 +112,19 @@ a {
   font-size: small;
   color: gray;
 }
+
 /* Main article container */
 .main-article-container {
-  width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
   margin: 15px auto;
-  text-align: justify;
+  text-align: left;
+  align-items: center;
+  column-gap: 50px;
 }
 
 .main-article-container .main-article-author {
   text-align: left;
-
 }
 
 .main-article-container .main-article-social {
@@ -132,9 +138,11 @@ a {
   display: flex;
   
 }
+
 .main-article-container .social-buttons li {
   margin-left: 10px;
 }
+
 .main-article-container .social-buttons a {
   background-color: #eee;
   border-radius: 100%;
@@ -151,10 +159,85 @@ a {
 .main-article-container .main-article-date {
   font-size: small;
 }
+
 .main-article-container .social-buttons .actions-buttons {
   background-color: transparent;
 }
 
 .main-article-container .social-buttons .comment-counter {
   position: absolute;
+}
+
+/* Article section */
+.main-article-container .article {
+  grid-column: 2; 
+}
+
+.main-article-container .article-section > p {
+  margin: 12px auto;
+}
+
+.main-article-container .article-section .article-create-account {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.1rem;
+}
+
+.main-article-container .article-section .article-create-account p:last-of-type a {
+  color: #326891;
+}
+
+.main-article-container .article-section .article-create-account hr {
+  width: 10%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+/* Article section aside editor picks */
+.main-article-container aside.editor-picks {
+  padding: 10px 20px;
+}
+
+.main-article-container aside.editor-picks h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.main-article-container aside.editor-picks .editor-picks-items li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.main-article-container aside.editor-picks .editor-picks-items li a {
+  display: flex;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.main-article-container aside.editor-picks img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* Article subsection */
+.article-subsection {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1;
+}
+.article-subsection .article-subsection-title {
+  text-align: left;
+}
+
+.main-article-container .article-subsection .article-subsection-subtitle {
+
+}
+
+.main-article-container .article-subsection .article-subsection-grid {
+
 }
