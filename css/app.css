@@ -390,3 +390,59 @@ footer header {
 footer header img {
   width: 160px;
 }
+
+footer .footer-links-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+footer .footer-links {
+  text-align: left;
+  font-size: small;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-link-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  
+}
+
+footer .footer-links-container ul:last-child {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+  
+
+}
+
+footer .footer-links-container li i a {
+  font-size: xx-large;
+}
+
+footer .footer-copyright {
+  display: flex;
+  border-top: 1px solid #ccc;
+  font-size: x-small;
+  justify-content: center;
+  color: gray;
+  margin: 30px auto 40px;
+  
+
+  
+}
+
+footer .footer-copyright li {
+  margin-right: 10px;
+}
+
+/* Utils */
+
+.border-bottom {
+  border-bottom: 1px solid #ccc
+}
+
