@@ -101,6 +101,7 @@ button {
 
 .main-nav-brand {
   height: 30px;
+  padding-top: 5px;
 }
 
 .main-nav-right li:not(:last-child) {
@@ -126,7 +127,6 @@ button {
 }
 
 .article-showcase figure {
-  display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 60px;
@@ -139,8 +139,8 @@ button {
 
 .article-showcase figcaption {
   width: 100%;
-  max-width: 700px;
-  margin-left: 60px;
+  margin-left: 0;
+  padding-left: 60px;
 }
 
 .article-showcase figcaption span {
@@ -457,6 +457,24 @@ footer {
   margin: 30px auto 40px;
 }
 
+.footer-widget {
+  border-top: 1px solid #333;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.footer-widget .container {
+  padding: 10px;
+  font-size: small;
+  text-align: center;
+  background-color: #fff;
+  grid-template-columns: 1fr 5fr 1fr;
+  display: grid;
+}
+
 /* Utils */
 .border-bottom {
   border-bottom: 1px solid #ccc;
@@ -466,6 +484,10 @@ footer {
 
 .margin-top {
   margin-top: 25px;
+}
+
+.margin-left {
+  margin-left: 15px;
 }
 
 button:hover,
