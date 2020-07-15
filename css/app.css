@@ -1,7 +1,7 @@
 /* Reset */
 *,
-*:after,
-*:before {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,6 +15,11 @@ body {
   text-align: center;
   margin: auto;
   font-family: "Tinos", serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h2 {
@@ -40,7 +45,6 @@ figcaption {
   color: gray;
   text-align: left;
   line-height: 1.25rem;
-  margin-top: 10px;
   max-width: 600px;
   margin: 10px auto;
 }
@@ -55,14 +59,27 @@ button {
   cursor: pointer;
 }
 
-button:hover, .social-buttons li a:hover {
-  opacity: .6;
+/* Fixing linters changes */
+.footer-header > a {
+  color: blue;
+}
+
+.main-nav-left a {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright li {
+  margin-right: 10px;
 }
 
 /* Main nav */
 .main-nav {
-  
-  padding: 10px;
+  padding: 5px 10px;
   border-bottom: 1px solid #e2e2e2;
 }
 
@@ -72,28 +89,21 @@ button:hover, .social-buttons li a:hover {
   align-items: center;
 }
 
-.main-nav .main-nav-left,
-.main-nav .main-nav-right {
+.main-nav-left,
+.main-nav-right {
   display: flex;
 }
 
-.main-nav .main-nav-left a {
-  padding: 10px;
-  font-size: 1rem;
-}
-
-.main-nav .main-nav-left a:hover {
+.main-nav-left a:hover {
   background-color: #fafafa;
   border-radius: 3px;
 }
 
-.main-nav .main-nav-brand {
+.main-nav-brand {
   height: 30px;
 }
 
-
-
-.main-nav .main-nav-right li:not(:last-child) {
+.main-nav-right li:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -103,7 +113,7 @@ button:hover, .social-buttons li a:hover {
   margin-bottom: 50px;
 }
 
-.main-article .article-showcase-title {
+.article-showcase-title {
   font-weight: 700;
   font-style: italic;
   color: #121212;
@@ -115,19 +125,25 @@ button:hover, .social-buttons li a:hover {
   font-size: 2.5rem;
 }
 
-.main-article .article-showcase > figure > img {
-  max-width: 100%;
-}
-
-
-.main-article .article-showcase figure {
+.article-showcase figure {
   display: flex;
   justify-content: center;
   flex-direction: column;
   padding: 0 60px;
 }
 
-.main-article .article-showcase figcaption span {
+.article-showcase img {
+  max-width: 100%;
+  padding: 0 60px;
+}
+
+.article-showcase figcaption {
+  width: 100%;
+  max-width: 700px;
+  margin-left: 60px;
+}
+
+.article-showcase figcaption span {
   font-size: small;
   color: gray;
 }
@@ -142,118 +158,118 @@ button:hover, .social-buttons li a:hover {
   column-gap: 50px;
 }
 
-.main-article-container .main-article-author {
+.main-article-author {
   text-align: left;
 }
 
-.main-article-container .main-article-social {
+.main-article-social {
   margin: 15px 0;
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
 
-.main-article-container .social-buttons, .article-footer .social-buttons {
+.social-buttons,
+.article-footer .social-buttons {
   display: flex;
 }
 
-.main-article-container .social-buttons li,  .article-footer .social-buttons li {
+.article .social-buttons li,
+.article-footer .social-buttons li {
   margin-left: 10px;
 }
 
-.main-article-container .social-buttons a, .article-footer .social-buttons a {
+.article .social-buttons a,
+.article-footer .social-buttons a {
   background-color: #eee;
   border-radius: 100%;
-  height: 15px;
-  width: 15px;
   padding: 10px;
   font-size: 15px;
 }
 
-.main-article-container .social-buttons li:last-child a {
+.social-buttons li:last-child a {
   position: relative;
 }
 
-.main-article-container .main-article-date {
+.main-article-date {
   font-size: small;
 }
 
-.main-article-container .social-buttons .actions-buttons {
+.social-buttons .actions-buttons {
   background-color: transparent;
 }
 
-.main-article-container .social-buttons .comment-counter {
+.social-buttons .comment-counter {
   position: absolute;
 }
 
 /* Article section */
-.main-article-container .article {
+.article {
   grid-column: 2;
 }
 
+.article .article-video {
+  padding: 20px 0;
+}
+
 .article-section,
+figure.article-video,
 .article-video figcaption {
   max-width: 600px;
   margin: 0 auto;
   text-align: left;
 }
 
-.article-video {
-  padding: 20px 0;
+.article-video iframe {
+  border: 0;
+  width: 100%;
+  outline: none;
 }
 
-.main-article-container .article-section > p,
 .article-section > p {
   margin: 12px auto;
 }
 
-.main-article-container .article-section .article-create-account {
+.article-create-account {
   text-align: center;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.1rem;
 }
 
-.main-article-container
-  .article-section
-  .article-create-account
-  p:last-of-type
-  a {
+.article-create-account p:last-of-type a {
   color: #326891;
 }
 
-.main-article-container .article-section .article-create-account hr {
+.article-create-account hr {
   width: 10%;
   margin: 20px auto;
   border: 1px solid #ccc;
 }
 
 /* Article section aside editor picks */
-.main-article-container aside.editor-picks {
+.editor-picks {
   padding: 10px 20px;
 }
 
-.main-article-container aside.editor-picks h3 {
+.editor-picks h3 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 15px;
   font-size: 14px;
 }
 
-.main-article-container
-  aside.editor-picks
-  .editor-picks-items
-  li:not(:last-child) {
+.editor-picks .editor-picks-items li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.main-article-container aside.editor-picks .editor-picks-items li a {
+.editor-picks .editor-picks-items li a {
   display: flex;
   font-size: 16px;
   line-height: 1;
 }
 
-.main-article-container aside.editor-picks img {
+.editor-picks img {
   width: 80px;
   height: 80px;
   margin-right: 10px;
@@ -268,6 +284,7 @@ button:hover, .social-buttons li a:hover {
   line-height: 1;
   letter-spacing: 0.7px;
 }
+
 .article-subsection .article-subsection-title {
   text-align: left;
 }
@@ -304,7 +321,6 @@ button:hover, .social-buttons li a:hover {
   margin: 0 auto;
   line-height: 1rem;
   text-align: left;
-  
 }
 
 .article-footer .article-footer-links {
@@ -319,7 +335,7 @@ button:hover, .social-buttons li a:hover {
 }
 
 /* Feature articles */
-.featured-articles figure img {
+.featured-articles img {
   width: 100%;
 }
 
@@ -372,7 +388,7 @@ button:hover, .social-buttons li a:hover {
   margin-top: -10px;
 }
 
-/* Featured articles aside section*/
+/* Featured articles aside section */
 .featured-articles .aside-articles-popular {
   width: 25%;
   float: right;
@@ -394,53 +410,45 @@ footer {
   margin-top: 15px;
 }
 
-footer header {
+.footer-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: small;
 }
 
-footer header a {
-  color: blue;
-}
-
-footer header img {
+.footer-header img {
   width: 160px;
 }
 
-footer .footer-links-container {
+.footer-links-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
-footer .footer-links {
+.footer-links {
   text-align: left;
   font-size: small;
   line-height: 1.5rem;
   font-weight: 500;
 }
 
-footer .footer-links a:hover {
-  text-decoration: underline;
-}
-
-footer .footer-link-title {
+.footer-link-title {
   font-weight: 700;
   text-transform: uppercase;
-  
+  line-height: 2rem;
 }
 
-footer .footer-links-container ul:last-child {
+.footer-link-title i {
+  margin-right: 5px;
+}
+
+.footer-links:last-child {
   border-left: 1px solid #ccc;
   padding-left: 15px;
 }
 
-footer .footer-links-container li i a {
-  font-size: xx-large;
-}
-
-footer .footer-copyright {
+.footer-copyright {
   display: flex;
   border-top: 1px solid #ccc;
   font-size: x-small;
@@ -449,22 +457,18 @@ footer .footer-copyright {
   margin: 30px auto 40px;
 }
 
-footer .footer-copyright li {
-  margin-right: 10px;
-}
-
 /* Utils */
-
 .border-bottom {
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
+.margin-top {
+  margin-top: 25px;
 }
 
-.flex {
-  display: flex;
+button:hover,
+.social-buttons li a:hover {
+  opacity: 0.6;
 }
-

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link rel="icon" type="image/png" href="/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="./css/app.css">
@@ -30,8 +30,8 @@
       </svg>
 
       <ul class="main-nav-right">
-        <li><button>SUBSCRIBE NOW</button></li>
-        <li><button>LOG IN</button></li>
+        <li><button type="button">SUBSCRIBE NOW</button></li>
+        <li><button type="button">LOG IN</button></li>
       </ul>
     </div>
   </nav>
@@ -58,7 +58,7 @@
           <p class="main-article-author"><b>By <a href="#">Dennis Overbye</a></b></p>
 
           <div class="main-article-social">
-            <time class="main-article-date">March 17, 2014</time>
+            <time class="main-article-date" datetime="2014-03-17">March 17, 2014</time>
 
             <ul class="social-buttons">
               <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -344,7 +344,7 @@
       </div>
 
       <figure class="article-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlfIVEy_YOA?controls=0" frameborder="0"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZlfIVEy_YOA?controls=0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <figcaption>
           Stanford Professor Andrei Linde celebrates physics breakthroughCredit...
@@ -426,7 +426,7 @@
           </span>
         </p>
         <div class="article-footer-social">
-          <button class="article-footer-show-comments">READ 615 COMMMENTS</button>
+          <button type="button" class="article-footer-show-comments">READ 615 COMMMENTS</button>
           <ul class="social-buttons">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -466,9 +466,8 @@
               <figure>
                 <img src="./img/related2.jpg" alt="Featured article thumbnail">
                 <figcaption>NASA</figcaption>
-                <h4>Vacation After Writer’s Resignation</h4>
               </figure>
-
+              <h4>Vacation After Writer’s Resignation</h4>
             </a>
             <p class="featured-articles-item-date">July 10</p>
           </div>
@@ -572,10 +571,10 @@
 
   <!-- Footer -->
   <footer class="container">
-    <header>
+    <div class="footer-header">
       <img class="footer-brand" src="./img/logo.png" alt="Company logo">
       <a href="#">Go to Home Page »</a>
-    </header>
+    </div>
 
     <div class="footer-links-container">
       <ul class="footer-links">
@@ -595,7 +594,7 @@
       </ul>
 
       <ul class="footer-links">
-        <li class="footer-links-title">OPINION</li>
+        <li class="footer-link-title">OPINION</li>
         <li><a href="#">Today's Opinion</a></li>
         <li><a href="#">Op-Ed Columnists</a></li>
         <li><a href="#">Editorials</a></li>
@@ -654,12 +653,11 @@
       </ul>
 
       <ul class="footer-links">
-        <li class="footer-link-title">
-          <a href="#"> <i class="far fa-newspaper"></i>Home Delivery </a></li>
-        <li class="footer-link-title"><a href="#"> <i class="fab fa-yahoo"></i> Digital Subscriptions </a></li>
-        <li class="footer-link-title"><a href="#"> <i class="fas fa-chess-board"></i> Crossword </a></li>
-        <li class="footer-link-title"><a href="#"> <i class="fas fa-utensils"></i> Cooking</a></li>
-        <li><a href="#">Email Newsletters</a></li>
+        <li class="footer-link-title"><a href="#"><i class="far fa-newspaper"></i> Home Delivery</a></li>
+        <li class="footer-link-title"><a href="#"><i class="fab fa-yahoo"></i> Digital Subscriptions</a></li>
+        <li class="footer-link-title"><a href="#"><i class="fas fa-chess-board"></i> Crossword</a></li>
+        <li class="footer-link-title"><a href="#"><i class="fas fa-utensils"></i> Cooking</a></li>
+        <li class="margin-top"><a href="#">Email Newsletters</a></li>
         <li><a href="#">Corporate Subscriptions</a></li>
         <li class="border-bottom"><a href="#">Education Rate</a></li>
         <li><a href="#">World</a></li>
@@ -671,7 +669,7 @@
     </div>
 
     <ul class="footer-copyright">
-      <li>&copy 2020 The New York Times Company</li>
+      <li>&copy; 2020 The New York Times Company</li>
       <li>NYTCo</li>
       <li>Contact Us</li>
       <li>Work with us</li>
