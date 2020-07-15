@@ -304,3 +304,73 @@ button {
   margin-top: 15px;
   align-items: center;
 }
+
+/* Feature articles */
+.featured-articles figure img {
+  width: 100%;
+}
+
+.featured-articles .featured-articles-float {
+  width: 72%;
+  float: left;
+  margin-right: 2%;
+  clear: none;
+}
+
+.featured-articles .featured-articles-container {
+  border-top: 1px solid #000;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.featured-articles h3 {
+  text-align: left;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.featured-articles h3 a:hover {
+  text-decoration: underline;
+}
+
+.featured-articles .featured-articles-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.featured-articles .featured-articles-item figure figcaption {
+  margin-top: -5px;
+  padding-top: 0;
+  text-align: right;
+  font-size: x-small;
+}
+
+.featured-articles .featured-articles-item h4 {
+  text-align: left;
+  font-size: medium;
+  margin-top: -15px;
+}
+
+.featured-articles .featured-articles-item .featured-articles-item-date {
+  text-align: left;
+  font-size: small;
+  color: #ccc;
+  margin-top: -10px;
+}
+
+/* Featured articles aside section*/
+.featured-articles .aside-articles-popular {
+  width: 25%;
+  float: right;
+  border-top: 1px solid #000;
+  padding-top: 15px;
+}
+
+.featured-articles .aside-articles-popular .aside-articles-popular-items li {
+  text-align: left;
+  border-top: 1px solid rgb(219, 219, 219);
+  padding: 15px 0;
+  line-height: 1.2;
+}
+
