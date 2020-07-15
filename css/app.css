@@ -374,3 +374,19 @@ button {
   line-height: 1.2;
 }
 
+/* Footer */
+footer {
+  clear: both;
+  border-top: 2px solid #ccc;
+  margin-top: 15px;
+}
+
+footer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer header img {
+  width: 160px;
+}
