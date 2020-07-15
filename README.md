@@ -2,29 +2,30 @@
 
 # Positioning and Floating Elements project: New York Times article page
 
-> This is a New York Times article page page clone using HTML and CSS3.
+> This is a New York Times article page clone using HTML and CSS3.
 
 ## Screenshots of original website
 
-![screenshot](./.github/screenshots/app-screenshot-original-full.png)
+![screenshot](./app-screenshot-original-full.png)
 
 ## Screenshots of our clone website
 
-![screenshot](./.github/screenshots/app-screenshot-clone-full.png)
+![screenshot](./app-screenshot-clone-full.png)
 
 
-The project is built using Html and Css and extensive use of the grid, flex and float css properties.
+The project is built using Html and Css with an extensive use of the grid, flex and float css properties.
 
 ## Built With
 
 - HTML
 - CSS3
+- Font awesome icons
 
 ## Live Demo
 
 [Live Demo Link](https://raw.githack.com/cristianCeamatu/microverse-new-york-times-article-page/adding-article-page/index.html)
 
-To get a local copy up and running follow these simple example steps.
+## To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
